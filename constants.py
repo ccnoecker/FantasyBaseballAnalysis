@@ -5,7 +5,7 @@ HITTER_FACTORS_MAPPING = {
     'Left': 'LHB',
     'Switch': 'All'
 }
-PARK_FACTORS_FILENAME = 'park_factors.csv'
+PARK_FACTORS_FILENAME = 'park-factors.csv'
 PITCHER_POSITIONS = ['SP', 'RP']
 
 TEAM_FILENAME = 'team.csv'
