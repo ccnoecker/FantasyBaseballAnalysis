@@ -14,6 +14,9 @@ OWNED_PLAYERS_IDS_FILENAME = 'owned-players-with-ids.csv'
 PARK_FACTORS_FILENAME = 'park-factors.csv'
 TEAM_FILENAME = 'team.csv'
 
+STATSAPI_BASE_URL = 'https://statsapi.mlb.com/api/v1'
+STATSAPI_PEOPLE_SEARCH_PATH = f'{STATSAPI_BASE_URL}/people/search'
+
 # Make sure statsapi.lookup_player() returns one single correct value for the lookup value added here
 PLAYER_LOOKUP_VALUES = {
     'ADiaz': 'Alexis Díaz',
