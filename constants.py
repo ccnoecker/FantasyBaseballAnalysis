@@ -9,6 +9,7 @@ PITCHER_POSITIONS = ['SP', 'RP']
 
 ALL_PLAYERS_FILENAME = 'all-players.csv'
 FANTASYPROS_PLAYERS_FILENAME = 'fantasypros-player-rankings.csv'
+MASTER_PLAYERS_FILENAME = 'master-players.csv'
 OWNED_PLAYERS_FILENAME = 'owned-players.csv'
 OWNED_PLAYERS_IDS_FILENAME = 'owned-players-with-ids.csv'
 PARK_FACTORS_FILENAME = 'park-factors.csv'
