@@ -1,6 +1,9 @@
+from re import findall
+from os import mkdir, path
+
 import pandas as pd
 import statsapi
-from os import mkdir, path
+from requests import get
 
 import constants
 
@@ -56,3 +59,8 @@ def save_dataframe(dataframe, filename):
     if not path.exists(constants.DATA_OUTPUT_PATH):
         mkdir(constants.DATA_OUTPUT_PATH)
     dataframe.to_csv(path.join(constants.DATA_OUTPUT_PATH, filename), index=False)
+
+
+def search_for_player(search_value):
+    lookup_results = get(f'{constants.STATSAPI_PEOPLE_SEARCH_PATH}?names={search_value}&hydrate=currentTeam', timeout=30).json()['people']
+    return next((player for player in lookup_results), None)
