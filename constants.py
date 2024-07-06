@@ -1,3 +1,5 @@
+from pathlib import Path
+
 DATA_OUTPUT_PATH = './data'
 
 HITTER_FACTORS_MAPPING = {
@@ -13,6 +15,8 @@ MASTER_PLAYERS_FILENAME = 'master-players.csv'
 OWNED_PLAYERS_IDS_FILENAME = 'owned-players-with-ids.csv'
 PARK_FACTORS_FILENAME = 'park-factors.csv'
 TEAM_FILENAME = 'team.csv'
+
+PL_ROSTERS_PATH = Path('pl-site', 'data', 'penguinRosters')
 
 STATSAPI_BASE_URL = 'https://statsapi.mlb.com/api/v1'
 STATSAPI_PEOPLE_SEARCH_PATH = f'{STATSAPI_BASE_URL}/people/search'
